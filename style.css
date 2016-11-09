@@ -1,0 +1,468 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Gisha';
+  src: url('gisha.ttf');
+}
+
+#image_fond_nancy {
+  background-image: url("street-381227.jpg");
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+
+/*--------------------------HEADER-----------------------*/
+
+#header {
+  background-color: #3b4956;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  float: left;
+  margin-left: 40px;
+  font-size: 30px;
+  color: white;
+  margin-top: 12.5px;
+  font-family: Gisha;
+}
+
+#logo span {
+  color: #52a054;
+}
+
+
+/*------------MENU---------------*/
+
+#menu {
+  float: right;
+  margin-right: 40px;
+}
+
+
+/* Checkbox Hack */
+
+#toggle-1,
+#toggle-2 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#menuderoulant {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: Gisha;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 10px;
+  height: 40px;
+  background-size: cover;
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  line-height: 40px;
+}
+
+#menuderoulant2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: Gisha;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 10px;
+  height: 40px;
+  background-size: cover;
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  line-height: 40px;
+}
+
+#menuderoulant2 img {
+  margin-top: 5px;
+}
+
+#menuderoulant:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#menuderoulant2:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes example {
+  from {
+    opacity: 0.1
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#submenu1 {
+  width: 230px;
+  margin-top: 60px;
+  color: white;
+  display: none;
+  position: absolute;
+  transition: 0.4s;
+  background-color: white;
+}
+
+#submenu1 ul li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+}
+
+#submenu1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+#submenu1 a {
+  color: grey;
+  font-family: Gisha;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#submenu1 a:hover > li {
+  background-color: #52a054;
+  color: white;
+}
+
+#toggle-1:checked ~ #submenu1 {
+  display: block;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+#toggle-2:checked ~ #submenu2 {
+  display: block;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+#menunonrac {
+  float: right;
+  margin-top: 3px;
+}
+
+#menunonrac ul li {
+  display: inline;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+#lestchild {
+  background-color: #52a054;
+  border-radius: 3px;
+  padding: 10px 0px 10px 0px;
+  box-shadow: -0px -2px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+#lestchild:hover {
+  background-color: #4d954f;
+  color: white;
+}
+
+#menunonrac a {
+  color: white;
+  font-family: Gisha;
+  text-decoration: none;
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+}
+
+#menulien:hover {
+  color: #c4ab00;
+}
+
+#submenu2 {
+  width: 147px;
+  margin-top: 60px;
+  color: white;
+  display: none;
+  position: absolute;
+  transition: 0.4s;
+  background-color: white;
+}
+
+#submenu2 ul li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+}
+
+#submenu2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+#submenu2 a {
+  color: #5f645f;
+  font-family: Gisha;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#submenu2 a:hover > li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*--------------------------------IMAGE ET INFOS----------------------------*/
+
+#image_infos {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid transparent;
+}
+
+#div_connection {
+  height: 370px;
+  width: 270px;
+  margin-top: 170px;
+  background-color: white;
+  float: left;
+  text-align: center;
+}
+
+#div_connection h3 {
+  color: #565c56;
+  font-family: Gisha;
+}
+
+#div_connection form {
+  color: #3f403f;
+  font-family: Gisha;
+}
+
+#div_connection input[type=text],
+#div_connection input[type=password] {
+  width: 200px;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  border-bottom: 2px solid #a8a8a8;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  /*background-color: #fafafa;*/
+}
+
+::-webkit-input-placeholder {
+  color: #565c56;
+  font-weight: 500;
+}
+
+::-moz-placeholder {
+  color: #565c56;
+  font-weight: 500;
+}
+
+::-ms-input-placeholder {
+  color: #565c56;
+  font-weight: 500;
+}
+
+input:-moz-placeholder {
+  color: #565c56;
+  font-weight: 500;
+}
+
+#div_connection span {
+  color: #a8a8a8;
+  font-size: 13px;
+}
+
+#div_connection input[type=submit] {
+  background-color: #3b4956;
+  border: none;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2px;
+  transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -webkit-transition: background-color .2s;
+}
+
+#div_connection input[type=submit]:hover {
+  background-color: #333f4a;
+}
+
+#Creer_compte {
+  background-color: #3b4956;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: Gisha;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -webkit-transition: background-color .2s;
+}
+
+#Creer_compte:hover {
+  background-color: #333f4a;
+}
+
+#div_connection span {
+  font-family: Gisha;
+}
+
+#oublie_prob {
+  color: #3d678d;
+  text-decoration: none;
+  font-family: Gisha;
+  font-size: 13px;
+}
+
+#oublie_prob:hover  {
+  text-decoration: underline;
+}
+
+/*-----------------------INFOS--------------------*/
+
+#div_infos {
+  float: right;
+  height: 370px;
+  margin-top: 170px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  font-family: Gisha;
+}
+
+#div_infos h3 {
+  color: #565c56;
+}
+
+#p1 {
+  color: grey;
+  width: 370px;
+  float: right;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 14.5px;
+}
+
+#ordinateur_image {
+  width: 130px;
+  background-image: url("image1.png");
+  background-size: cover;
+  height: 100px;
+}
+
+#image_une {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.button_1 {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #52a054;
+  border-radius: 3px;
+  box-shadow: -0px -2px 6px rgba(0, 0, 0, 0.05) inset;
+}
+
+#button_infos {
+  height: 50px;
+  margin-top: 30px;
+}
+
+.button_1:hover {
+  background-color: #61a863;
+}
+
+#image_deux {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  height: 100px;
+}
+
+#p2 {
+  color: grey;
+  width: 370px;
+  line-height: 20px;
+  margin-top: 30px;
+  float: left;
+  font-size: 14.5px;
+}
+
+#ordinateur_image2 {
+  width: 130px;
+  float: left;
+  background-image: url("image2.png");
+  background-size: cover;
+  height: 100px;
+}
+
+
+/*------------SUITE---------------*/
+
+/*----------------------------------------------------------*/
+/*                                                          */
+/*              CARTE    DE   NANCY                         */
+/*                                                          */
+/*                                                          */
+/*----------------------------------------------------------*/
+
+#carte {
+  background-image: url('Nancy_map.svg');
+  width: 700px;
+  background-size: cover;
+  height: 550px;
+  margin-top: 70px;
+  float: left;
+}
+
+#cartiers {
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  float: left;
+  margin-top: 70px;
+}
